@@ -1,72 +1,45 @@
 // FETCH
 
 function fetchData() {
-  fetch("https://reqres.in/api/users")
+  let promise = fetch("https://avancera.app/cities/");
+
+  promise
     .then((response) => {
-      //to find & see status of "ok"
       console.log(response);
-      if (!response.ok) {
-        throw Error("ERROR!");
-      }
-      return response.json();
+
+      let someOtherPromise = response.json();
+
+      return someOtherPromise;
     })
-    .then((data) => {
-      console.log(data.data);
-      //loop over objects in array & construct a HTML string from it
-      const html = data.data
-        .map((user) => {
-          // return '<p>Name</p>' + user.first_name
-          return `
-      <div class='user'>
-      <p><img src="${user.avatar}" alt="${user.first_name}"></p>
-      <p>Name: ${user.first_name}</p>
-      <p>Email: ${user.email}</p>
-      </div>`;
-          //join returns a new string by concatenating all of the elements in an array
-        })
-        .join("");
-      //logs in array format
-      console.log(html);
-      document
-        .querySelector("#fetch")
-        //.innerHTML = (html)
-        .insertAdjacentHTML(
-          "beforeend",
-          //'<h1>yolooo</h1>',
-          html
-        );
-    })
-    .catch((error) => {
-      console.log(error);
+    .then((result) => {
+      console.log(result);
+      console.log(result[1]);
+      console.log(result[1].id);
+      console.log(result[1].name);
+      console.log(result[1].population);
+
+      document.body.textContent = result
+      document.body.textContent = result[1]
+      document.body.textContent = result[1].id
+      document.body.textContent = result[1].name
+      document.body.textContent = result[1].population
+
+      // const arr =
     });
 }
+
 fetchData();
 
+// let ele = document.querySelector("h1");
+// ele.textContent = "Hello World!";
 
+// document.querySelector("p").innerHTML = "1st";
+// document.querySelector("h2").innerHTML = "2nd";
 
-// fetch('https://avancera.app/cities/')
-//   .then(response => response.json())
-//   .then(result => {
-//     console.log(result)
-//   })
+// POST
 
-//   fetch('https://reqres.in/api/users/')
-//   .then(response => {
-//     //to find & see status of "ok"
-//     console.log(response);
-//     if(!response.ok) {
-//       throw Error('ERROR!');
-//     }
-//     return response.json();
-//   })
-//   .then(data => {
-//     console.log(data);
-//     document.querySelector('#app')
-//   .innerHTML = '<h1>TEST</h1>' + userfirst_name
-//   })
-//   .catch(error => {
-//     console.log(error);
-//   })
-// }
+//PUT
 
-// fetchData();
+//DELETE
+
+//PATCH
