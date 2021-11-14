@@ -1,0 +1,42 @@
+[
+  {
+      "id": "1",
+      "firstName": "John",
+      "lastName": "Doe"
+  },
+  {
+      "id": "2",
+      "firstName": "Mary",
+      "lastName": "Peterson"
+  },
+  {
+      "id": "3",
+      "firstName": "George",
+      "lastName": "Hansen"
+  },
+  {
+    "id": "89839",
+    "name": "Upside Down Universe | Running since 2017",
+    "address": "198.251.89.92",
+    "port": "27016",
+    "private": "0",
+    "password": "0",
+    "location": "Europe",
+    "hostname": "Upside Down Universe | Alpha",
+    "map": "[EU 24/7] UD Alpha World",
+    "is_online": "1",
+    "players": "12",
+    "maxplayers": "46",
+    "version": "1199025",
+    "platform": "windows",
+    "uptime": "98",
+    "score": "902",
+    "rank": "4",
+    "votes": "557",
+    "favorited": "38",
+    "comments": "0",
+    "url": "https://space-engineers.com/server/89839/",
+    "last_check": "November 9th, 2021 06:05 AM EST",
+    "last_online": "November 9th, 2021 06:05 AM EST"
+}
+]
