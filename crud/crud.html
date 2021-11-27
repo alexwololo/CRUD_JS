@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRUD</title>
+  <link rel="stylesheet" href="crud.css" />
+</head>
+
+<body>
+  <section class="get">
+    <h1>GET DATA</h1>
+    <div class="get_results"></div>
+    <button id="get">Get Data</button>
+  </section>
+
+  <section class="post">
+    <h1>POST DATA</h1>
+    <div class="post_results"></div>
+    <form action="#" id="post_form">
+      <input type="text" name="name" id="name" placeholder="City Name" />
+      <input type="number" name="population" id="population" placeholder="Population" />
+      <button id="post">Save Data</button>
+    </form>
+  </section>
+
+  <section class="put">
+    <h1>PUT DATA</h1>
+    <div class="put_results"></div>
+    <form action="#" id="put_form">
+      <input type="text" name="docId" id="docId" placeholder="Document ID" />
+      <input type="text" name="name" id="name" placeholder="New City Name" />
+      <input type="number" name="population" id="population" placeholder="New Population" />
+      <button id="put">Completely Change Data</button>
+    </form>
+  </section>
+
+  <section class="patch">
+    <h1>PATCH DATA</h1>
+    <div class="patch_results"></div>
+    <form action="#" id="patch_form">
+      <input type="text" name="docId" id="docId" placeholder="Document ID" />
+      <input type="text" name="name" id="name" placeholder="New City Name" />
+      <input type="number" name="population" id="population" placeholder="New Population" />
+      <button id="patch">Partialy Change Data</button>
+    </form>
+  </section>
+
+  <section class="delete">
+    <h1>DELETE DATA</h1>
+    <div class="delete_results"></div>
+    <form action="#" id="delete_form">
+      <input type="text" name="docId" id="docId" placeholder="Document ID" />
+      <button id="delete">Delete Data</button>
+    </form>
+  </section>
+</body>
+<script src="crud.js"></script>
+
+</html>
