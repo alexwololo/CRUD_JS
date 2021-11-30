@@ -1,0 +1,258 @@
+<!--
+
+
+                                              (
+     _ _    (                                 )\ )
+   _| | |_  )\ )  (      (    (   (          (()/(
+  |_  .  _|(()/(  )(    ))\  ))\  )(   `  )   /(_))
+  |_     _| /(_))(()\  /((_)/((_)(()\  /(/(  (_))
+    |_|_|  (_) _| ((_)(_)) (_))   ((_)((_)_\ | _ \
+            |  _|| '_|/ -_)/ -_) | '_|| '_ \)|   /
+            |_|  |_|  \___|\___| |_|  | .__/ |_|_\
+                                      |_|
+
+  __________________
+
+  Implementation/Development/Design by: Strotter
+  ——————————————————
+
+
+
+  ——————————————————
+  🍺 Aren't you thirsty? Have some Klang Cola? 🍻
+  ——————————————————
+
+
+                 */*&&&&&&%%%&&&&&&*(.
+             ((&&(                  .%&&..
+          *&&#                           &&,
+        %&&                                ,&#*
+      &&&                                    ,&*,
+     /&(                                       &#*
+    ,&/    /%%%%%%(    %%%%%%%%%%%%%%%#,        %#,
+   /&%     (@@@@@@%    @@@@@@@@@@@@@@@@@@@#      &.
+   *&,     (@@@/       ///* *///       @@@@#     %#.
+    %.  .  (@@@/       @@@& %@@@,      .@@@&     (%
+   *%,     /@@@@      @@@@& %@@@*      @@@@(     #(
+   /##      *@@@@@@@@@@@@&. %@@@@@@@@@@@@@(      #
+    (#(        .#&@@@&(,    (%&&&&%%%%#*.       #*
+     ,((                                       (,
+       *(                                    /(
+         *(.                               /(
+            ((                          ,(*
+               *((,                 *((.
+                     ,/((((((((/*.
+
+                                    _   _
+    _ __  _____ __ _____ _ _ ___ __| | | |__ _  _
+   | '_ \/ _ \ V  V / -_) '_/ -_) _` | | '_ \ || |
+   | .__/\___/\_/\_/\___|_| \___\__,_| |_.__/\_, |
+   |_|                                       |__/
+
+
+   ██ ▄█▀ ██▓    ▄▄▄       ███▄    █   ▄████
+   ██▄█▒ ▓██▒   ▒████▄     ██ ▀█   █  ██▒ ▀█▒
+  ▓███▄░ ▒██░   ▒██  ▀█▄  ▓██  ▀█ ██▒▒██░▄▄▄░
+  ▓██ █▄ ▒██░   ░██▄▄▄▄██ ▓██▒  ▐▌██▒░▓█  ██▓
+  ▒██▒ █▄░██████▒▓█   ▓██▒▒██░   ▓██░░▒▓███▀▒
+  ▒ ▒▒ ▓▒░ ▒░▓  ░▒▒   ▓▒█░░ ▒░   ▒ ▒  ░▒   ▒
+  ░ ░▒ ▒░░ ░ ▒  ░ ▒   ▒▒ ░░ ░░   ░ ▒░  ░   ░
+  ░ ░░ ░   ░ ░    ░   ▒      ░   ░ ░ ░ ░   ░
+  ░  ░       ░  ░     ░  ░         ░       ░
+
+
+
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arcturus | Home</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/fetchTen/fetchTen.css">
+  <script src="/fetchTen/fetchTen.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+  <nav id="main-nav">
+    <div class="container">
+      <img src="img/logo.png" alt="NewsGrid" class="logo">
+      <div class="social">
+        <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="http://twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="http://youtube.com" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+      </div>
+      <ul>
+        <li><a class="current" href="/">Home</a></li>
+        <li><a href="crud.html">CRUD</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Showcase -->
+  <header id="showcase">
+    <div class="container">
+      <div class="showcase-container">
+        <div class="showcase-content">
+          <div class="category category-sports">Fetch & display</div>
+          <h1>Welcome!</h1>
+          <p>The purpose of this site is to display information using fetch calls in vanilla JS, HTML and CSS. I hope
+            you will enjoy the content and layout of this app.</p>
+          <a href="article.html" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Home Articles -->
+  <section id="home-articles" class="py-2">
+    <div class="container">
+      <h2>Top storys</h2>
+      <div class="articles-container">
+        <article class="card">
+          <img src="img/articles/sports1.jpg" alt="">
+          <div>
+            <div class="category category-ent">Start here</div>
+            <h3>
+              <a href="article.html">Server info</a>
+            </h3>
+            <ol id="tenResults">
+              <li id="one"></li>
+              <li id="two"></li>
+            </ol>
+            <p>Here we can see the servername as well as the status of the server. 1 means the server is online, 0 means
+              the
+              server is offline. All of this is made with css grid.</p>
+          </div>
+        </article>
+        <article class="card bg-dark">
+          <div class="category category-sports">Chartjs</div>
+          <h3>
+            <a href="article.html">Players online</a>
+          </h3>
+          <canvas id="players" width="200" height="200"></canvas>
+          <p>Hover the mouse over the blue section to see amount of players online.</p>
+        </article>
+        <article class="card">
+          <img src="img/articles/tech1.jpg" alt="">
+          <div class="category category-tech">Crack the code</div>
+          <h3>
+            <a href="article.html">Cool output</a>
+          </h3>
+          <p>We are able to comine output When manipulating the DOM. In thhis example i am combining maxplayers and
+            players. Example: ${result.players} / ${result.maxplayers}</p>
+          <ol id="tenResults">
+            <li id="three"></li>
+            <li id="four"></li>
+          </ol>
+        </article>
+        <article class="card">
+          <div class="category category-sports">// life motto</div>
+          <h3>
+            <a href="article.html">Eat sleep code repeat</a>
+          </h3>
+          <p>Server rank is depending on player votes. The more players that stay on the server the faster the
+            reputation of the server will spread thus making even more players join the server.
+          <ol id="tenResults">
+            <li id="five"></li>
+            <li id="six"></li>
+          </ol>
+          </p>
+
+          <img src="img/articles/ent1.jpg" alt="">
+        </article>
+        <article class="card">
+          <img src="img/articles/tech2.jpg" alt="">
+          <div class="category category-tech">Beware the 404</div>
+          <h3>
+            <a href="article.html">Git gud</a>
+          </h3>
+          <p>Good servers gain more votes due to popularity!</p>
+          <ol id="tenResults">
+            <li id="seven"></li>
+            <li id="eight"></li>
+          </ol>
+        </article>
+        <article class="card bg-primary">
+          <div class="category category-sports">Still here ?!</div>
+          <h3>
+            <a href="article.html">Helpful?</a>
+          </h3>
+          <p>Fetching and displaying serverinfo like this can be helpful when visualizing data. Combining different ways
+            of displaying information makes for a good user experience.</p>
+        </article>
+        <article class="card">
+          <div>
+            <div class="category category-ent">U made it all the way</div>
+            <h3>
+              <a href="article.html">Server location</a>
+            </h3>
+            <p>Sometimes users want to know where the server is located and when the latest server call was made.</p>
+            <ol id="tenResults">
+              <li id="nine"></li>
+              <li id="ten"></li>
+            </ol>
+          </div>
+          <img src="img/articles/ent2.jpg" alt="">
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="main-footer" class="py-2">
+    <div class="container footer-container">
+      <div>
+        <img src="img/logo.png" alt="NewsGrid">
+        <p>Perhaps you thought that i would have run out of interesting content to write about here?! Oh boy, that could
+          not be further from the truth. You can always count on great content here!</p>
+      </div>
+      <div>
+        <h3>Email Newsletter</h3>
+        <p>Do you want to learn more? enter to gain access to our newsletter.</p>
+        <form>
+          <input type="email" placeholder="Enter Email...">
+          <input type="submit" value="Subscribe" class="btn btn-primary">
+        </form>
+      </div>
+      <div>
+        <h3>Site Links</h3>
+        <ul class="list">
+          <li><a href="#">Help & Support</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Become a programmer</h2>
+        <p>Stop beeing a n00b and instead become a n00b$layer. Enter the matrix here:</p>
+        <a href="#" class="btn btn-secondary">Join Now</a>
+      </div>
+      <div>
+        <p>
+          Copyright &copy; 2019, All Rights Reserved
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"
+    integrity="sha512-GMGzUEevhWh8Tc/njS0bDpwgxdCJLQBWG3Z2Ct+JGOpVnEmjvNx6ts4v6A2XJf1HOrtOsfhv3hBKpK9kE5z8AQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/chartV2/chartV2.js"></script>
+</body>
+
+
+</html>

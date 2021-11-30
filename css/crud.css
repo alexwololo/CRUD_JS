@@ -1,0 +1,86 @@
+:root {
+  --color-turquoise: #1abc9c;
+  --color-green-sea: #16a085;
+  --color-nephritis: #27ae60;
+  --color-emerald: #2ecc71;
+  --color-peter-river: #3498db;
+  --color-belize-hole: #2980b9;
+  --color-amethyst: #9b59b6;
+  --color-wisteria: #8e44ad;
+  --color-wet-asphalt: #34495e;
+  --color-midnight-blue: #2c3e50;
+  --color-sun-flower: #f1c40f;
+  --color-orange: #f39c12;
+  --color-carrot: #e67e22;
+  --color-pumpkin: #d35400;
+  --color-alizarin: #e74c3c;
+  --color-pomegranate: #c0392b;
+  --color-clouds: #ecf0f1;
+  --color-silver: #bdc3c7;
+  --color-concrete: #95a5a6;
+  --color-asbestos: #7f8c8d;
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+a,
+img,
+button,
+input,
+label,
+select,
+span,
+i {
+  display: inline-block;
+} */
+/* html {
+  font-size: 62.5%;
+} */
+body {
+  background: var(--color-midnight-blue);
+  color: var(--color-green-sea);
+}
+
+section:not(:last-child) {
+  margin-bottom: 3rem;
+}
+section h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+section button {
+  padding: 0.6rem 2rem;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+}
+
+section button:hover {
+  background: #000;
+  color: #fff;
+}
+section input {
+  padding: 1rem 3rem;
+}
+section form {
+  display: flex;
+  gap: 2rem;
+}
+
+section .doc {
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  border-bottom: 1px solid var(--color-orange);
+}
+section .doc > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+section .doc span {
+  margin-right: 0.5rem;
+}
