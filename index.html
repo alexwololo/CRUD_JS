@@ -79,7 +79,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato&family=Staatliches&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="/fetchTen/fetchTen.css">
-  <script src="/fetchTen/fetchTen.js"></script>
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 
@@ -144,6 +143,7 @@
           <canvas id="players" width="200" height="200"></canvas>
           <p>Hover the mouse over the blue section to see amount of players online.</p>
         </article>
+
         <article class="card">
           <img src="img/articles/tech1.jpg" alt="">
           <div class="category category-tech">Crack the code</div>
@@ -157,6 +157,7 @@
             <li id="four"></li>
           </ol>
         </article>
+
         <article class="card">
           <div class="category category-sports">// life motto</div>
           <h3>
@@ -206,6 +207,20 @@
           </div>
           <img src="img/articles/ent2.jpg" alt="">
         </article>
+
+        <article class="card ceaxer-card" style="grid-column: auto; display: block;">
+          <img src="img/articles/tech1.jpg" alt="">
+          <div class="category category-tech">Doing some LocalStorage Stuff</div>
+          <h3>
+            <a href="article.html">Local Storage</a>
+          </h3>
+          <p>We are able to combine output When manipulating the DOM. In this example i am combining maxplayers and
+            players. Example: ${result.players} / ${result.maxplayers}</p>
+          <ol id="localResults">
+            <li id="local-1"></li>
+            <li id="local-2"></li>
+          </ol>
+        </article>
       </div>
     </div>
   </section>
@@ -252,6 +267,9 @@
     integrity="sha512-GMGzUEevhWh8Tc/njS0bDpwgxdCJLQBWG3Z2Ct+JGOpVnEmjvNx6ts4v6A2XJf1HOrtOsfhv3hBKpK9kE5z8AQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="/chartV2/chartV2.js"></script>
+  <!-- When working with DOM I shouldnt use script in the head because tags are not loaded at that time this will cause errors. -->
+  <script src="/fetchTen/fetchTen.js"></script>
+
 </body>
 
 

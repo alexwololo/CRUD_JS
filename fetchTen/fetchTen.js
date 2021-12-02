@@ -6,61 +6,72 @@ fetch(
   .then((result) => {
     console.log(result);
     htmlData(result);
+
+    for (const item in result) {
+      localStorage.setItem(item, result[item]);
+    }
   });
 
 const htmlData = (result) => {
   const host = `
-  <p>Server name: ${result.hostname}</p>
+    <p>Server name: ${result.hostname}</p>
   `;
   document.querySelector("#one").insertAdjacentHTML("afterbegin", host);
 
   const serverStatus = `
-  <p>Server: ${result.is_online}</p>
+    <p>Server: ${result.is_online}</p>
   `;
   document.querySelector("#two").insertAdjacentHTML("afterbegin", serverStatus);
 
   const uptime = `
-  <p>Server uptime: ${result.uptime}</p>
+    <p>Server uptime: ${result.uptime}</p>
   `;
   document.querySelector("#three").insertAdjacentHTML("afterbegin", uptime);
 
   const maxPlayers = `
-  <p>Players online: ${result.players} / ${result.maxplayers}</p>
+    <p>Players online: ${result.players} / ${result.maxplayers}</p>
   `;
   document.querySelector("#four").insertAdjacentHTML("afterbegin", maxPlayers);
 
   const playersOnline = `
-  <p>Player limit: ${result.maxplayers}</p>
+    <p>Player limit: ${result.maxplayers}</p>
   `;
   document
     .querySelector("#five")
     .insertAdjacentHTML("afterbegin", playersOnline);
 
   const rank = `
-  <p>Server rank: ${result.rank}</p>
+    <p>Server rank: ${result.rank}</p>
   `;
   document.querySelector("#six").insertAdjacentHTML("afterbegin", rank);
 
   const score = `
-  <p>Server score: ${result.score}</p>
+    <p>Server score: ${result.score}</p>
   `;
   document.querySelector("#seven").insertAdjacentHTML("afterbegin", score);
 
   const votes = `
-  <p>Amounts of votes: ${result.votes}</p>
+    <p>Amounts of votes: ${result.votes}</p>
   `;
   document.querySelector("#eight").insertAdjacentHTML("afterbegin", votes);
 
   const location = `
-  <p>Server location: ${result.location}</p>
+    <p>Server location: ${result.location}</p>
   `;
   document.querySelector("#nine").insertAdjacentHTML("afterbegin", location);
 
   const lastCheck = `
-  <p>Latest server check: ${result.last_online}</p>
+    <p>Latest server check: ${result.last_online}</p>
   `;
   document.querySelector("#ten").insertAdjacentHTML("afterbegin", lastCheck);
 };
+const li_1 = document.getElementById("local-1");
+const li_2 = document.getElementById("local-2");
+
+li_1.textContent = `Server uptime: ${localStorage.getItem("uptime")}`;
+li_2.textContent = `Players online: ${localStorage.getItem(
+  "players"
+)}/${localStorage.getItem("maxplayers")}`;
 
 // //FETCH JSON
 // fetch("main.json")
